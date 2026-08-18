@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pulseboard turns scattered product feedback into a clear, prioritized roadmap.">
+  <title>Pulseboard — Turn feedback into focus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav-shell">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Pulseboard home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        Pulseboard
+      </a>
+      <div class="nav-links">
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#cta">Get started</a>
+      </div>
+      <a class="nav-cta" href="#cta">Try Pulseboard <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> Built for teams that ship</div>
+        <h1>Turn customer noise into <em>clear priorities.</em></h1>
+        <p class="hero-sub">Pulseboard brings feedback, requests, and product signals into one calm workspace—so your team knows what deserves attention next.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cta">Start free <span>→</span></a>
+          <a class="button ghost" href="#product">See the product <span>↓</span></a>
+        </div>
+        <p class="microcopy">No credit card required. No fake promises—just a faster way to decide.</p>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-label="Pulseboard product preview">
+        <div class="glow"></div>
+        <div class="dashboard">
+          <div class="dash-top">
+            <div>
+              <span class="mini-label">WORKSPACE</span>
+              <strong>Product signals</strong>
+            </div>
+            <button class="icon-button" aria-label="More options">•••</button>
+          </div>
+          <div class="dash-body">
+            <aside class="side">
+              <span class="side-active">Overview</span>
+              <span>Inbox <b>18</b></span>
+              <span>Roadmap</span>
+              <span>Insights</span>
+            </aside>
+            <div class="main-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="mini-label">THIS WEEK</span>
+                  <h3>What needs your attention?</h3>
+                </div>
+                <span class="date-pill">Aug 18</span>
+              </div>
+              <div class="signal-card featured">
+                <div class="signal-icon">↗</div>
+                <div class="signal-content">
+                  <span class="tag">HIGH SIGNAL</span>
+                  <strong>Bulk export</strong>
+                  <p>14 requests · 3 segments · rising</p>
+                </div>
+                <span class="score">92</span>
+              </div>
+              <div class="signal-grid">
+                <div class="signal-card">
+                  <div class="signal-icon soft">◎</div>
+                  <div class="signal-content"><strong>Faster search</strong><p>8 requests</p></div>
+                </div>
+                <div class="signal-card">
+                  <div class="signal-icon soft">◌</div>
+                  <div class="signal-content"><strong>Team roles</strong><p>6 requests</p></div>
+                </div>
+              </div>
+              <div class="trend">
+                <div class="trend-head"><span>Request momentum</span><b>+18%</b></div>
+                <div class="bars" aria-hidden="true">
+                  <i style="height:28%"></i><i style="height:42%"></i><i style="height:34%"></i><i style="height:55%"></i>
+                  <i style="height:48%"></i><i style="height:72%"></i><i style="height:63%"></i><i style="height:86%"></i>
+                  <i style="height:76%"></i><i style="height:96%"></i><i style="height:82%"></i><i style="height:100%"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof container reveal" aria-label="Product principles">
+      <div><span>01</span><strong>Collect</strong><p>Bring scattered feedback together.</p></div>
+      <div><span>02</span><strong>Understand</strong><p>Group requests by signal, not volume.</p></div>
+      <div><span>03</span><strong>Decide</strong><p>Turn evidence into a roadmap.</p></div>
+    </section>
+
+    <section id="product" class="product-section">
+      <div class="container product-layout">
+        <div class="section-copy reveal">
+          <div class="eyebrow">A quieter product workflow</div>
+          <h2>Less spreadsheet archaeology. More confident decisions.</h2>
+          <p>Pulseboard gives every request context: who asked, how often, which customer segment it affects, and whether the signal is actually growing.</p>
+          <ul class="feature-list">
+            <li><span>✓</span><div><strong>One feedback inbox</strong><small>Capture requests without losing the original context.</small></div></li>
+            <li><span>✓</span><div><strong>Signal-based scoring</strong><small>Prioritize patterns instead of rewarding whoever shouts loudest.</small></div></li>
+            <li><span>✓</span><div><strong>Roadmap-ready output</strong><small>Move a clear decision from insight to planning in seconds.</small></div></li>
+          </ul>
+        </div>
+
+        <div class="insight-card reveal delay-1">
+          <div class="insight-head"><span class="mini-label">INSIGHT</span><span class="status">Growing</span></div>
+          <h3>“Bulk export” is becoming a recurring blocker.</h3>
+          <p>Requests are appearing across multiple customer segments, with momentum increasing this week.</p>
+          <div class="insight-footer"><span>Signal confidence</span><strong>High</strong></div>
+          <div class="confidence"><i></i></div>
+          <button class="decision" id="decisionBtn">Add to roadmap <span>→</span></button>
+          <span class="decision-note" id="decisionNote" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how container reveal">
+      <div class="eyebrow">Designed around the decision</div>
+      <h2>From “people are asking” to<br><em>“here’s what we should do.”</em></h2>
+      <div class="steps">
+        <article><span>1</span><h3>Capture</h3><p>Connect your feedback sources and keep requests in one searchable stream.</p></article>
+        <article><span>2</span><h3>Cluster</h3><p>Turn repeated requests into themes with the context needed to judge them.</p></article>
+        <article><span>3</span><h3>Commit</h3><p>Make a roadmap decision, record why, and give the team a shared source of truth.</p></article>
+      </div>
+    </section>
+
+    <section id="cta" class="cta container reveal">
+      <div>
+        <div class="eyebrow">Ready when you are</div>
+        <h2>Make the next product decision<br><em>feel obvious.</em></h2>
+      </div>
+      <a class="button light" href="mailto:hello@example.com?subject=Pulseboard%20demo">Request a demo <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© 2026 Pulseboard</span>
+    <span>Made for teams who care about the why.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
