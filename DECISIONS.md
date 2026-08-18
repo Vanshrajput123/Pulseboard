@@ -1,12 +1,18 @@
 # DECISIONS.md
 
-## Why this product and approach
-I chose to invent **Pulseboard**, a feedback-to-roadmap product, because the brief rewards product taste and honest UX more than copying an existing brand. The page is intentionally content-led: one value proposition, one CTA, and a real-looking product surface rather than testimonials, fake customer logos, or invented metrics.
+### Why this ingestion strategy over the obvious alternative you rejected?
+What we chose: I used simple HTML, CSS, and JavaScript instead of heavy frameworks like React.
 
-I used plain HTML/CSS/JS instead of a framework. For a single marketing page, that is the shortest path to a fast, dependency-light build that I can explain line-by-line. CSS handles the responsive system and visual hierarchy; a tiny JavaScript layer handles scroll reveal, the roadmap interaction, and the easter egg.
+What we rejected (Alternative): While heavy frameworks are great for complex apps, they bring unnecessary extra file size and setup complexity for a simple landing page.
 
-## Trade-off
-Under the time limit I prioritized the hero, product preview, mobile layout, spacing/type system, and one meaningful interaction over adding more sections. With a real week, I would add a working signup flow, connect the demo card to real application state, run accessibility/performance audits, and test the copy/layout with real users.
+Why this won: It makes the website load instantly, avoids build errors, and ensures I completely understand every single line of code so I can easily explain it.
 
-## AI usage
-AI was used as a coding/design copilot for initial structure, responsive CSS ideas, and copy alternatives. I personally reviewed the implementation, removed fabricated proof points, checked the responsive breakpoints, verified the interaction behavior, and kept the final architecture intentionally simple enough to explain in a follow-up interview.
+### One trade-off you made under the time limit, and what you’d do with a real week
+Under the time limit: I focused only on the most important parts—like the hero section, product preview, mobile responsiveness, and clean design.
+
+With a real week: I would add a fully working sign-up page, connect the dashboard preview to live data, improve accessibility features, and test the design with real users.
+
+### Where did you use AI tools, and what did you personally verify or change afterward?
+Where I used AI: I used AI as an assistant to help set up the basic HTML structure, brainstorm responsive CSS ideas, and draft placeholder text.
+
+What I personally verified/changed: After getting suggestions from the AI, I manually reviewed all the code, tested it across different mobile screen sizes, fine-tuned the JavaScript interactions, and made sure I fully understand the entire codebase to easily explain it.
