@@ -1,29 +1,18 @@
-# Pulseboard — Acdyon Technologies Frontend Challenge
+# Pulseboard
 
-A polished, responsive home page for the Acdyon "Build It Like You Mean It" Part 2 challenge.
+A polished, responsive home page for a feedback-to-roadmap product. Built with pure HTML, CSS, and JavaScript.
 
 ## Run locally
 
-No build step is required.
-
-```bash
-# Option 1: double-click index.html
-# Option 2:
-python -m http.server 8000
-# then open http://localhost:8000
-```
+No build step required. You can just open `index.html` directly in your browser.
 
 ## Files
 
-- `index.html` — semantic page structure and product mockup
-- `styles.css` — responsive visual system
-- `script.js` — scroll reveal, demo interaction, easter egg
-- `DECISIONS.md` — required one-page design/engineering explanation
+* `index.html` — semantic page structure and product mockup
+* `styles.css` — responsive visual system
+* `script.js` — scroll reveal, demo interaction, and easter egg
+* `DECISIONS.md` — design and engineering explanation
 
 ## Deployment
 
-Upload the folder to Vercel, Netlify, GitHub Pages, or another static host.
-
-## Notes
-
-No fabricated testimonials, customer logos, user counts, or performance claims are used. The product is intentionally fictional and clearly presented as a product concept.
+Deployable instantly to  Netlify, or GitHub Pages.
